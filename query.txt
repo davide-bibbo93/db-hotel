@@ -39,7 +39,7 @@
 
     SELECT *
     FROM `ospiti`
-    WHERE `date_of_birth` > '1991-03-08'
+    WHERE `date_of_birth` >= '1991-03-08'
     ORDER BY `date_of_birth` ASC;
 
 ****************************************************************************************************

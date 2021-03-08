@@ -1,13 +1,13 @@
 # Boolean - DB Hotel Exercise
 
-## Traccia esercizio (Prima Parte):
+## Esercizio diagramma:
 
 Provare a strutturare il seguente database che modellizza un hotel:
 Ci sono varie stanze, ognuna con le proprie caratteristiche.
 Le diverse stanze vengono prenotate per periodi di tempo, da ospiti.
 Ad ogni prenotazione devono essere associati tutti gli ospiti della stanza
 
-## Traccia esercizio (Seconda Parte):
+## Esercizio query SQL:
 
 In un file .txt inserite la traccia e la query SQL relativa.
 
