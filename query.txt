@@ -16,7 +16,7 @@
 
     SELECT *
     FROM `paganti`
-    WHERE `ospite_id` <> "NULL";
+    WHERE `ospite_id` IS NOT NULL;
 
 ****************************************************************************************************
 ●    Selezionare tutte le stanze del primo piano
@@ -30,16 +30,15 @@
 
     SELECT *
     FROM `ospiti`
-    WHERE `name`
-    LIKE 'E%'
+    WHERE `name` LIKE 'E%'
     ORDER BY `lastname` ASC;
 
 ****************************************************************************************************
 ●    Selezionare tutti gli ospiti che abbiano meno di 30 anni
 
-    SELECT *
+    SELECT `name`,`lastname`,`date_of_birth`,TIMESTAMPDIFF(YEAR,`date_of_birth`, CURRENT_TIMESTAMP ) AS age
     FROM `ospiti`
-    WHERE `date_of_birth` >= '1991-03-08'
+    WHERE TIMESTAMPDIFF(YEAR,`date_of_birth`, CURRENT_TIMESTAMP ) <= 30
     ORDER BY `date_of_birth` ASC;
 
 ****************************************************************************************************
