@@ -143,7 +143,7 @@ Join
 
 ●    Stampare Nome, Cognome, Prezzo e Pagante per tutte le prenotazioni fatte a Maggio 2018
 
-    SELECT ospiti.name, ospiti.lastname, pagamenti.price, paganti.name AS nome_pagante, paganti.lastname AS cognome_paagante
+    SELECT ospiti.name, ospiti.lastname, pagamenti.price, paganti.name AS nome_pagante, paganti.lastname AS cognome_pagante
     FROM `ospiti`
     INNER JOIN `paganti`
     ON paganti.ospite_id = ospiti.id
@@ -180,7 +180,7 @@ Join
 
 ●    Le stanze sono state tutte prenotate almeno una volta? (Visualizzare le stanze non ancora prenotate)
 
-    SELECT * 
+    SELECT *
     FROM `stanze`
     LEFT JOIN `prenotazioni`
     ON prenotazioni.stanza_id = stanze.id
